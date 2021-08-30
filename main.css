@@ -1,0 +1,618 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'montserrat', sans-serif;
+    background-color: #f7f7f7;
+}
+
+:root{
+    --yellow:rgb(197, 162, 7);
+    --white:#fff;
+    --grey:#ddd;
+    --m20:20px;
+    --margin-bottom:20px;
+    --black:rgb(17, 16, 16);
+}
+
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/img/pexels-lukas-590022.jpg);
+    min-height:70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+}
+#logo h3{
+    font-size: 30px;
+}
+.Title{
+    position: absolute;
+    top:40%;
+    width:100%;
+    text-align: center;
+}
+.Title h1{
+  font-size: 70px;
+  font-weight:700;
+}
+.Title p{
+    color:var(--white);
+    font-size: 20px;
+    font-weight: 200;
+}
+.Title button{
+    margin-top: 20px;
+    background-color: orange;
+    padding:15px;
+    font-size: 15px;
+    border-radius: 10px;
+    outline: none;
+}
+.Title button:hover{
+     background-color: #fff;
+}
+#navbar{
+    position: relative;
+    background-color: #fff;
+    width:100%;
+    height:60px;
+    z-index: 999;
+    padding:20px, 20px, 20px 20px;
+}
+#nav{
+    position: absolute;
+    float:right;
+    top: 20px;
+    right:0;
+}
+/*
+ul li{
+    display:inline-block;
+    list-style-type: none;
+    margin-right:30px;
+    font-weight: 600;
+
+}
+ul li:hover{
+    border-bottom: 3px solid orange;
+}
+ul a{
+    text-decoration: none;
+    color:var(--black);
+    margin:var(--m20)
+}
+*/
+.drop-content li{
+    display:inline-block;
+    list-style-type: none;
+    margin-right:30px;
+    font-weight: 600;
+
+}
+.drop-content li:hover{
+    border-bottom: 3px solid orange;
+}
+.drop-content a{
+    text-decoration: none;
+    color:var(--black);
+    margin:var(--m20)
+}
+li:last-child{
+    background-color: orange;
+    padding:10px;
+    border-radius: 10px;
+}
+.container{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 100px;
+    background-color: #fff;
+    box-shadow:0 0 128px 0 rgba(0,0,0,0.1),
+    0 32px 64px -48px rgba(0,0,0, 0.5);
+}
+.container:nth-child(odd) img{
+    order: 2;
+   
+}
+
+.Container-1{
+    padding:25px;
+}
+
+.Container-1 .Appoint{
+ background-color: rgb(31, 219, 14);
+ padding:10px;
+ outline: none;
+ border: none;
+}
+.Container-1 .Contact{
+  background-color:ORANGE;
+  padding:10px;
+  outline: none;
+  margin: 3px;
+  border: none;
+  cursor: pointer;
+}
+.container h1{
+    font-size: 50px;
+    font-weight: 500;
+}
+.container p{
+    letter-spacing: 2px;
+    color:gray;
+    padding:20px;
+}
+.container img{
+    width:100%;
+    height:50vh;
+}
+.container ~ h2{
+   text-align: center;
+   font-size: 30px;
+   font-weight: 700;
+   margin-top: 30px;
+}
+.Consider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    box-shadow:0 0 128px 0 rgba(0,0,0,0.1),
+    0 32px 64px -48px rgba(0,0,0, 0.5);
+    margin-top: 70px;
+}
+.Consider-1{
+    padding:30px;
+}
+.Consider-1 h3{
+   font-size: 40px;
+}
+.Consider-1 h3::first-letter{
+    font-size: 70px;
+    font-weight: 700;
+    color: green;
+}
+.Consider ~ h4{
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 60px;
+    color: green;
+}
+.Consider p{
+    padding:10px;
+    letter-spacing:2px;
+    color: gray;
+}
+.Consider img{
+    width:100%;
+    height:60vh;
+    opacity: 2;
+}
+.Consider button{
+    background-color: orange;
+    padding:17px;
+    border-radius: 20px;
+}
+.Service{
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    padding:20px;
+}
+.Service-1{
+    box-shadow:0 0 128px 0 rgba(0,0,0,0.1),
+    0 32px 64px -48px rgba(0,0,0, 0.5);
+    background-color: #fff;
+     width:20%;
+     margin-top: 100px;
+}
+.Service-1 .icon{
+     font-size: 30px;
+     width: 100%;
+     margin-left: 40%;
+     background-color: orange;
+     padding:5px;
+}
+.Service-1 span{
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    margin-left: 30%;
+}
+.Service-1 h1{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 20px;
+    text-align: center;
+    
+}
+.Service-1 p{
+   font-size: 15px;
+   color:gray;
+   padding:20px;
+
+}
+.bg{
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/img/pexels-fauxels-3183125.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+.Achievement{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    width:100%;
+    height:300px;
+    background-color:green;
+    mix-blend-mode:hard-light;
+}
+
+.Achievement-1{
+    border:1px solid #fff;
+    width:20%;
+    height:120px;
+    color:#fff;
+    text-align: center;
+}
+.Achievement-1 h1{
+    font-size: 40px;
+    margin-top: 20px;
+}
+.Achievement-1 p{
+    font-weight: 500;
+    margin-top: 20px;
+}
+.Team{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.Team-1{
+    width:20%;
+    background-color: #fff;
+    box-shadow:0 0 128px 0 rgba(0,0,0,0.1),
+    0 32px 64px -48px rgba(0,0,0, 0.5);
+    justify-content: center;
+    padding: 20px;
+
+}
+.Team-1 h3{
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
+}
+.Team-1 h5{
+    color:green;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 15px;
+}
+.Team-1 p{
+    margin-top: 10px;
+    letter-spacing: 2px;
+    color: gray;
+    font-weight: 200;
+    padding:5px;
+}
+.Team-1 img{
+    display:block;
+    width:100px;
+    height:100px;
+   border-radius: 50px;
+   margin-left:auto;
+   margin-right: auto;
+
+}
+.Team-1 .icon{
+  font-size: 20px;
+  color:green;
+  background-color: #fff;
+  box-shadow:0 0 128px 0 rgba(0,0,0,0.1),
+    0 32px 64px -48px rgba(0,0,0, 0.5);
+  margin:20px;
+  border:1px solid rgb(58, 54, 54);
+  width:20px;
+  padding:5px;
+
+}
+.Banner{
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/img/PRIOE.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+.Banner-1{
+    height:300px;
+    width:100%;
+    background-color: green;
+    mix-blend-mode:hard-light;
+    opacity: 2;
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+}
+.Banner h1{
+    color: White;
+    font-size: 30px;
+    font-weight: 700;
+}
+.Banner-1 p{
+    color:white;
+    letter-spacing: 2px;
+    padding: 20px;
+    white-space:pre-wrap;
+}
+.Banner-1 button{
+    background-color: orange;
+    padding:15px;
+    outline:none;
+    border-radius: 10px;
+}
+.Testimonial{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+
+}
+.Testimonial-1{
+    background-color: #fff;
+  box-shadow:0 0 128px 0 rgba(0,0,0,0.1),
+    0 32px 64px -48px rgba(0,0,0, 0.5);
+    width:20%;
+}
+.Testimonial-1 p{
+    letter-spacing: 2px;
+    color:gray;
+    padding:20px;
+}
+.Testimonial-1 .icon{
+    font-size: 40px;
+    color: orange;
+    width:100px;
+    margin-left: 40px;
+}
+.Testimonial-1 h6{
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 300;
+}
+.Testimonial-1 img{
+   width:50px;
+   height: 50px;
+   border-radius:50px;
+   margin-top: 10px;
+}
+.Testimonial ~ h5{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 30px;
+    font-weight: 700;
+}
+.Appointment{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.Appointment-1 form{
+    display: block;
+    padding: 25px;
+}
+.Appointment-1 input{
+    display: block;
+    padding:20px;
+    width:500px;
+    margin:30px;
+}
+.Appointment-1 h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+.Appointment-1 textarea{
+    height:200px;
+    padding:20px;
+    margin:20px;
+    border:2px solid #ccc;
+    resize: none;
+}
+.Appointment-1 button{
+    background-color: green;
+    padding:20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    color: #fff;
+    outline: none;
+}
+.Appointment img{
+    width:60%;
+    height:90vh;
+}
+footer{
+  background-color: black;
+  margin-top: 50px;
+  height: 300px;
+}
+.Main-footer{
+   display: flex;
+   justify-content: space-around;
+}
+.main-footer-1{
+    margin-top: 30px;
+}
+.main-footer-1 li{
+    color: white;
+    list-style-type: none;
+    margin: 30px;
+}
+.main-footer-1 li:last-child{
+   background: none;
+   padding: 0;
+   margin: 20px;
+}
+.main-footer-1 h4{
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+}
+.main-footer-1 .icon{
+   font-size: 18px;
+}
+.menu-icon{
+    font-size: 30px;
+    float: right;
+   display: none;
+}
+.copyright{
+    text-align: center;
+    margin-right: 45px;
+}
+
+
+
+
+@media screen and (max-width:768px){
+    html,body{
+        width:100%; 
+        overflow-x: hidden;*/
+    }
+    #logo h3{
+        font-size: 20px;
+    } 
+    
+    .Title h1{
+        font-size: 40px;
+        font-weight:700;
+      }
+      .Title p{
+        color:var(--white);
+        font-size: 15px;
+        font-weight: 200;
+    }
+    .container{
+        display: block;
+    }
+    .container h1{
+        font-size: 30px;
+        white-space:pre-line;
+    }
+    .container p{
+        justify-content: start;
+        padding:0;
+        margin-top: 20px;
+    }
+    .Container-1 button{
+        margin-top: 20px;
+    }
+    .Consider{
+        display:block;
+    }
+    .Service{
+        display:block;
+    }
+    .Service-1{
+        width:100%;
+    }
+    .Achievement{
+        display:block;
+        height:100vh;
+        margin-top: 20px;
+    }
+    .Achievement-1{
+        width:80%;
+        margin:30px auto;
+    }
+    .Achievement img{
+        height:100vh;
+    }
+    .Team{
+        display:block;
+    }
+    .Team-1{
+        width:100%;
+        margin-bottom: 10px;
+    }
+     .Banner-1{
+         height:100vh;
+     }
+     .Testimonial{
+         display:block;
+     }
+     .Testimonial-1{
+         width:80%;
+         margin:0 auto;
+     }
+     .Appointment{
+         display:block;
+     }
+     .Appointment img{
+         width:100%;
+     }
+     .Appointment-1 input{
+         padding:10px;
+         margin:0;
+         margin-bottom: 10px;
+         width:100%;
+     }
+     footer{
+         height:100rem;
+     }
+     .Main-footer{
+         display:block;
+         justify-content: center;
+     }
+     .main-footer-1{
+      text-align: center;
+     }
+     .container:nth-child(odd) img{
+        order: 1;
+    }
+   
+     ul #Menu:active{
+        background-color: orange;
+    }
+   
+    ul li{
+        margin-top: 40px;
+    }
+    ul li:hover{
+        color: gray;
+        
+    } 
+  
+   .drop-content{
+       display:none;
+   }
+    
+    .show{
+        display: block;
+        height: 60vh;
+        background-color: white;
+        margin-top: 40px;
+        width:160px;
+    }
+    .drop-content li a:hover{
+        color:gray;
+        width:100%;
+    }
+   
+    .menu-icon{
+        display: block;
+    }
+ 
+    li:last-child{
+        background: none;
+        padding:0;
+    }
+   
+  
+}
+
